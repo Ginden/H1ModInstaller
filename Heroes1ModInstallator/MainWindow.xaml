@@ -1,0 +1,36 @@
+﻿<Window x:Class="Heroes1ModInstallator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Heroes1ModInstallator"
+        mc:Ignorable="d"
+        Title="H1 Mod Installer" Height="291.532" Width="544.222">
+    <Grid RenderTransformOrigin="0.5,0.5" Margin="-86,2,64,-7">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="229*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="128*"/>
+            <RowDefinition Height="97*"/>
+        </Grid.RowDefinitions>
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0.294"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Button Content="Add mod" HorizontalAlignment="Left" Margin="189.186,58,0,0" VerticalAlignment="Top" Width="75" Uid="merge-files-button" Grid.Row="1" Click="Merge_Mod" Grid.Column="1"/>
+        <TextBox Name="ModFilePath" HorizontalAlignment="Left" Height="23" Margin="18,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="337" Uid="mod-file-path" Grid.Column="1" />
+        <Button Content="Pick" HorizontalAlignment="Left" Margin="360,74,0,0" VerticalAlignment="Top" Width="75" Click="Pick_Mod" Uid="pick-mod" Grid.Column="1"/>
+        <TextBox Name="GogFilePath" HorizontalAlignment="Left" Height="23" Margin="18.186,5,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="337" Uid="gog-file-path" Grid.Row="1" Grid.Column="1"/>
+        <Button Content="Pick" HorizontalAlignment="Left" Margin="360.186,8,0,0" VerticalAlignment="Top" Width="75" Uid="pick-gog" Grid.Row="1" Click="Pick_Gog" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="18,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" Grid.Column="1"><Run Text="File"/><Run Text=" "/><Run Text="homm1.gog"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="18,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" Grid.Column="1"><Run Text="Mod file "/><Run Text="(.zip)"/></TextBlock>
+        <CheckBox Name="BackupState" Content="Backup" Grid.Column="1" HorizontalAlignment="Left" Margin="320,58,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
